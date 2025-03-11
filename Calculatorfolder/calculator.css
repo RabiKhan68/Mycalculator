@@ -1,0 +1,118 @@
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+:root {
+    --primary-color: #edf2fc;
+    --secondary-color: #212121;
+}
+
+.dark-theme {
+    --primary-color: #000106;
+    --secondary-color: #fff;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: all 0.5s ease-in-out;
+}
+
+form {
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    width: 100%;
+    margin: 70px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid rgba(0, 255, 255, 0.5);
+}
+
+form {
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+form h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+form input {
+    border: none;
+    color: var(--secondary-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+}
+
+.dark-theme form input {
+    color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.8),
+    0 0 25px rgba(0, 255, 255, 0.6);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.dark-theme form input:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), /* Green glow */
+                0 0 30px rgba(0, 255, 0, 0.6);
+}
+
+.dark-theme form {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.8),
+                0 0 40px rgba(0, 255, 255, 0.6);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+}
+
+.dark-theme form:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.8), /* Green glow */
+                0 0 30px rgba(0, 255, 0, 0.6);
+}
+
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 245, 255, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 255, 215, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 215, 255, 0.8);
+    }
+}
+
+.dark-theme form {
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+.rotate {
+    animation: rotateIcon 1.5s ease-in-out;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/animations.min.css" integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel= "icon" href = "calculator-solid-24.png" type = "image/x-icon" />
+    <link rel="stylesheet" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <nav class= "dark-theme">
+        <img src="moony.png" id = "icon" alt= "image">
+    </nav>
+    <form name= "calcForm">
+        <h2>Simple Calculator</h2>
+        <input type = "text" name= "answer" placeholder = "Enter values to sum">
+        <br>
+        <input type = "button" value= "1" onclick= "calcForm.answer.value += '1'">
+        <input type = "button" value= "2" onclick= "calcForm.answer.value += '2'">
+        <input type = "button" value= "3" onclick= "calcForm.answer.value += '3'">
+        <input type = "button" value= "4" onclick= "calcForm.answer.value += '4'">
+        <input type = "button" value= "5" onclick= "calcForm.answer.value += '5'">
+        <br>
+        <input type = "button" value= "6" onclick= "calcForm.answer.value += '6'">
+        <input type = "button" value= "7" onclick= "calcForm.answer.value += '7'">
+        <input type = "button" value= "8" onclick= "calcForm.answer.value += '8'">
+        <input type = "button" value= "9" onclick= "calcForm.answer.value += '9'">
+        <input type = "button" value= "0" onclick= "calcForm.answer.value += '0'">
+        <input type = "button" value= "00" onclick= "calcForm.answer.value += '00'">
+        <br>
+        <input type = "button" value= "+" onclick= "calcForm.answer.value += '+'">
+        <input type = "button" value= "-" onclick= "calcForm.answer.value += '-'">
+        <input type = "button" value= "*" onclick= "calcForm.answer.value += '*'">
+        <input type = "button" value= "/" onclick= "calcForm.answer.value += '/'">
+        <input type = "button" value= "%" onclick= "calcForm.answer.value += '%'">
+        <input type = "button" value= "." onclick= "calcForm.answer.value += '.'">        
+        <input type = "button" value= "(" onclick= "calcForm.answer.value += '('">        
+        <input type = "button" value= ")" onclick= "calcForm.answer.value += ')'">
+        <br>
+        <input type = "button" value= "=" onclick="calculate()">
+        <input type = "button" value="clear" onclick="clearInput()">
+        <input type = "button" value="&#9003;" onclick="backspace()">
+    </form>
+    <script src= "calculator.js"></script>
+</body>
+</html>
